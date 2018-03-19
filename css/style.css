@@ -1,0 +1,348 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:500);
+
+body {
+  background: #7fc89b;
+  font-family: Raleway;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+#tv{
+  position: absolute;
+  top:0px;
+  left:10px;
+  height: 3800px;
+  width:1100px;
+}
+#black{
+  position: absolute;
+  top: 220px;
+  left:90px;
+  height: 2000px
+  width:3000px;
+  z-index: -1;
+}
+
+#wave{
+  position: absolute;
+  top: 220px;
+  left:90px;
+  z-index: -3;
+  height: 440px;
+  width: 480px;
+  display: none;
+}
+
+#cloud{
+  position: absolute;
+  top: 220px;
+  left:90px;
+  z-index: -4;
+  height: 420px;
+  width: 480px;
+  display: none;
+}
+
+#tree{
+  position: absolute;
+  top: 220px;
+  left:90px;
+  z-index: -2;
+  height: 420px;
+  width: 480px;
+  display: none;
+}
+
+#tvi{
+  position: absolute;
+  top: 220px;
+  left:90px;
+  z-index: -1;
+  height: 420px;
+  width: 480px;
+  display: none;
+}
+
+.thumbnail:hover{
+  width: 170px;
+  height: 170px;
+}
+
+.thumbnail{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  margin-top: -20px;
+  filter: grayscale(1);
+}
+
+#cafe{
+  left:850px;
+  top:10px;
+}
+
+#cars{
+  left:1050px;
+  top:10px;
+}
+
+#door{
+  left:850px;
+  top:160px;
+}
+
+#elevator{
+  left:1050px;
+  top:160px;
+}
+
+#flipping_pages{
+  left:850px;
+  top:310px;
+}
+
+#footsteps{
+  left:1050px;
+  top:310px;
+}
+
+#id_beep{
+  left:850px;
+  top:460px;
+}
+
+#piano{
+  left:1050px;
+  top:460px;
+}
+
+#single_page{
+  left:850px;
+  top:610px;
+}
+
+#street{
+  left:1050px;
+  top:610px;
+}
+
+#typing{
+  left:1250px;
+  top:10px;
+}
+
+#water{
+  left:1250px;
+  top:160px;
+}
+
+#writing{
+  left:1250px;
+  top:310px;
+}
+
+#zipper{
+  left:1250px;
+  top:460px;
+}
+
+#player{
+  left:160px;
+  top:0px; 
+}
+
+#player2{
+  left:360px;
+  top:-70px; 
+}
+
+#player3{
+  left:160px;
+  top:10px; 
+}
+
+#player4{
+  left:360px;
+  top:-40px; 
+}
+
+#player5{
+  left:160px;
+  top:60px; 
+}
+
+#player6{
+  left:360px;
+  top:10px; 
+}
+
+#player7{
+  left:160px;
+  top:110px; 
+}
+
+#player8{
+  left:360px;
+  top:60px; 
+}
+
+#player9{
+  left:160px;
+  top:150px; 
+}
+
+#player10{
+  left:360px;
+  top:100px; 
+}
+
+#player11{
+  left:560px;
+  top:-550px; 
+}
+
+#player12{
+  left:560px;
+  top:-440px; 
+}
+
+#player13{
+  left:560px;
+  top:-350px; 
+}
+
+#player14{
+  left:560px;
+  top:-250px; 
+}
+
+input[type="range"] {
+  position: absolute;
+  width: auto;
+  -webkit-appearance: none;
+  background: transparent;
+  width: 100px;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]::-ms-track {
+  width: 100px;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  margin-top: -8px;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #FABF74;
+  border: 1px solid #FAFAFA;
+  border-radius: 15px;
+  height: 8px;
+}
+
+input[type="range"]::-moz-range-track {
+  background: #FABF74;
+  border: 1px solid #FAFAFA;
+  border-radius: 15px;
+  height: 30px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  position: relative;
+  width: 8px;
+  height: calc(100% + 16px);
+  background: #FAFAFA;
+  border: 1px solid #FAFAFA;
+  border-radius: 4px;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+}
+
+input[type="range"]::-moz-range-thumb {
+  position: relative;
+  width: 8px;
+  height: calc(100% + 16px);
+  background: #FAFAFA;
+  border: 1px solid #FAFAFA;
+  border-radius: 4px;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+}
+
+input[type="range"]::-ms-thumb {
+  position: relative;
+  width: 8px;
+  height: calc(100% + 16px);
+  background: #FAFAFA;
+  border: 1px solid #FAFAFA;
+  border-radius: 4px;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+}
+
+input[type="range"]:active::-webkit-slider-thumb {
+  background: #162A45;
+}
+
+input[type="range"]:active::-moz-range-thumb {
+  background: #162A45;
+}
+
+input[type="range"]:active::-ms-thumb {
+  background: #162A45;
+}
+
+.players {
+  width: 150px;
+  height: 50px;
+  position: relative;
+  margin: 0 auto;
+  top: 80px;
+}
+.players i {
+  position: absolute;
+  margin-top: -6px;
+  color: #666;
+}
+.players i.fa-volume-down {
+  margin-left: -8px;
+}
+.players i.fa-volume-up {
+  margin-right: -8px;
+  right: 0;
+}
+
+.volumes {
+  position: absolute;
+  left: 24px;
+  margin: 0 auto;
+  height: 5px;
+  width: 100px;
+  background: #555;
+  border-radius: 15px;
+}
+.volumes .ui-slider-range-min {
+  height: 5px;
+  width: 300px;
+  position: absolute;
+  background: #2ecc71;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+.volumes .ui-slider-handle {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background: #FFF;
+  position: absolute;
+  margin-left: -8px;
+  margin-top: -8px;
+  cursor: pointer;
+  outline: none;
+}

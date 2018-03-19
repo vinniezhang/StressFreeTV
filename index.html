@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Stress Free TV </title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+  <div id="tv">
+    <img src="images/bluetv.png" width=70% height=20%>
+  </div>
+
+  <div id="black">
+    <img src="gifs/black.jpg" >
+  </div>
+<div id="gif">
+  <img id='cloud' src="gifs/cloud4.gif" >
+  <img id='wave' src="gifs/waves2.gif" >
+  <img id='tree' src="gifs/tree2.gif" >
+
+  <img id='tvi' src="gifs/tv2.gif" >
+
+</div>
+  <!--all of the buttons -->
+  <div id="buttons">
+
+    <img id="cafe" class="thumbnail" src="images/coffee.png" onclick="playm('cafe')">
+    <img id="cars" class="thumbnail" src="images/car.png" onclick="playm('cars')">
+    <br>
+    <img id="door" class="thumbnail" src="images/door.png" onclick="playm('door')">
+    <img id="elevator" class="thumbnail" src="images/elevator.png" onclick="playm('elevator')">
+    <br>
+    <img id="flipping_pages" class="thumbnail" src="images/flipping_pages.png" onclick="playm('flipping_pages')">
+    <img id="footsteps" class="thumbnail" src="images/footsteps.png" width=100 height=100 onclick="playm('footsteps')">
+    <br>
+    <img id="id_beep" class="thumbnail" src="images/id_beep.png" onclick="playm('id_beep')">
+    <img id="piano" class="thumbnail" src="images/piano.png" onclick="playm('piano')">
+    <br>
+    <img id="single_page" class="thumbnail" src="images/single_page.png" onclick="playm('single_page')">
+    <img id="street" class="thumbnail" src="images/street.png" onclick="playm('street')">
+    <br>
+    <img id="typing" class="thumbnail" src="images/typing.png" onclick="playm('typing')">
+    <img id="water" class="thumbnail" src="images/water.png" onclick="playm('water')">
+    <br>
+    <img id="writing" class="thumbnail" src="images/writing.png" onclick="playm('writing')">
+    <img id="zipper" class="thumbnail" src="images/zipper.png"onclick="playm('zipper')">
+
+  </div>
+
+<audio loop id="a_cafe">
+    <source src="audio/cafe.wav" type="audio/WAV">
+</audio>
+<br/>
+<div id="player" class="players">
+    <i class="fa fa-volume-down"></i>
+    <input id="volume" class="volumes" type="range" min="0" max="100" value="100" step="1" 
+    oninput="SetVolume('a_cafe',this.value)" onchange="SetVolume(this.value)"></input>
+    <i class="fa fa-volume-up"></i>
+</div>
+
+<audio loop id="a_cars">
+    <source src="audio/cars.wav" type="audio/WAV">
+</audio>
+
+<br/>
+<div id="player2" class="players">
+    <i class="fa fa-volume-down"></i>
+    <input id="volume2" class="volumes" type="range" min="0" max="100" value="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume('a_cars',this.value)"></input>
+    <i class="fa fa-volume-up"></i>
+</div>
+
+<audio loop id="a_door">
+    <source src="audio/door.wav" type="audio/WAV">
+</audio>
+
+<br/>
+<div id="player3" class="players">
+    <i class="fa fa-volume-down"></i>
+    <input id="volume3" class="volumes" type="range" min="0" max="100" value="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume('a_door',this.value)"></input>
+    <i class="fa fa-volume-up"></i>
+</div>
+
+<audio loop id="a_elevator">
+  <source src="audio/elevator.wav" type="audio/WAV">
+</audio>
+<div id="player4" class="players">
+    <i class="fa fa-volume-down"></i>
+    <input id="volume3" class="volumes" type="range" min="0" max="100" value="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume('a_elevator',this.value)"></input>
+    <i class="fa fa-volume-up"></i>
+</div>
+
+<audio loop id="a_flipping_pages">
+  <source src="audio/flipping_pages.wav" type="audio/WAV">
+</audio>
+
+<div id="player5" class="players">
+    <i class="fa fa-volume-down"></i>
+    <input id="volume4" class="volumes" type="range" min="0" max="100" value="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume('a_flipping_pages',this.value)"></input>
+    <i class="fa fa-volume-up"></i>
+</div>
+
+<audio loop id="a_footsteps">
+  <source src="audio/footsteps.wav" type="audio/WAV">
+</audio>
+
+<div id="player6" class="players">
+    <i class="fa fa-volume-down"></i>
+    <input id="volume5" class="volumes" type="range" min="0" max="100" value="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume('a_footsteps',this.value)"></input>
+    <i class="fa fa-volume-up"></i>
+</div>
+
+<audio loop id="a_id_beep">
+  <source src="audio/id_beep.wav" type="audio/WAV">
+</audio>
+
+<div id="player7" class="players">
+    <i class="fa fa-volume-down"></i>
+    <input id="volume6" class="volumes" type="range" min="0" max="100" value="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume('a_id_beep',this.value)"></input>
+    <i class="fa fa-volume-up"></i>
+</div>
+
+<audio loop id="a_piano">
+  <source src="audio/piano.wav" type="audio/WAV">
+</audio>
+
+<div id="player8" class="players">
+    <i class="fa fa-volume-down"></i>
+    <input id="volume7" class="volumes" type="range" min="0" max="100" value="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume('a_piano',this.value)"></input>
+    <i class="fa fa-volume-up"></i>
+</div>
+
+<audio loop id="a_single_page">
+  <source src="audio/single_page.wav" type="audio/WAV">
+</audio>
+
+<div id="player9" class="players">
+    <i class="fa fa-volume-down"></i>
+    <input id="volume8" class="volumes" type="range" min="0" max="100" value="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume('a_single_page',this.value)"></input>
+    <i class="fa fa-volume-up"></i>
+</div>
+
+<audio loop id="a_street">
+  <source src="audio/street.wav" type="audio/WAV">
+</audio>
+
+<div id="player10" class="players">
+    <i class="fa fa-volume-down"></i>
+    <input id="volume9" class="volumes" type="range" min="0" max="100" value="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume('a_street',this.value)"></input>
+    <i class="fa fa-volume-up"></i>
+</div>
+
+<audio loop id="a_typing">
+  <source src="audio/typing.wav" type="audio/WAV">
+</audio>
+
+<div id="player11" class="players">
+    <i class="fa fa-volume-down"></i>
+    <input id="volume8" class="volumes" type="range" min="0" max="100" value="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume('a_typing',this.value)"></input>
+    <i class="fa fa-volume-up"></i>
+</div>
+
+<audio loop id="a_water">
+  <source src="audio/water.wav" type="audio/WAV">
+</audio>
+
+<div id="player12" class="players">
+    <i class="fa fa-volume-down"></i>
+    <input id="volume11" class="volumes" type="range" min="0" max="100" value="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume('a_water',this.value)"></input>
+    <i class="fa fa-volume-up"></i>
+</div>
+
+<audio loop id="a_writing">
+  <source src="audio/writing.wav" type="audio/WAV">
+</audio>
+
+<div id="player13" class="players">
+    <i class="fa fa-volume-down"></i>
+    <input id="volume8" class="volumes" type="range" min="0" max="100" value="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume('a_writing',this.value)"></input>
+    <i class="fa fa-volume-up"></i>
+</div>
+
+<audio loop id="a_zipper">
+  <source src="audio/zipper.wav" type="audio/WAV">
+</audio>
+
+<div id="player14" class="players">
+    <i class="fa fa-volume-down"></i>
+    <input id="volume13" class="volumes" type="range" min="0" max="100" value="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume('a_zipper',this.value)"></input>
+    <i class="fa fa-volume-up"></i>
+</div>
+  </div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+  
+
+<script  src="js/index.js"></script>
+
+</body>
+</html>
